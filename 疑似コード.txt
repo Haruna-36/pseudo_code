@@ -1,0 +1,77 @@
+a=[1,2,...,100],b=[1,3,5,...,199]
+➀一次元配列の総和
+start process
+	from numpy import empty
+	a = empty
+	result = 0
+	loop i from 1 to n
+		result = result + a[i]
+	end loop
+	display result
+end process
+
+sum_practice(n,a)
+
+②一次元配列の平均
+start process
+	from numpy import empty
+	result2 = 0
+	result2 = result1/100
+	print(result2)
+end process
+
+③一次元配列の分散variance
+start procss
+	from numpy import empty
+	python1.pyと同じコードでresult_sumを得る
+	python2.pyと同じコードでresult_averageを得る
+	分子 = 0
+	for i in range(0,n):
+		分子=分子+(a[i]-result_average)^2
+	分散=分子/n
+	print(分散)
+end process
+
+④一次元配列の共分散
+start process
+	from numpy import empty
+	n=100
+	a=[1,2,3,...,n](for文)
+	b=[1,3,5,...,2n-1](for文)
+	a_averageの計算
+	b_averageの計算
+	分子=(a[i]-a_average)*(b[i]-b_average)
+	共分散=分子/n
+	print(共分散)
+end process
+
+⑤一次元配列の最大値を取得
+start process
+	n=100
+	a=[1,2,3,...,n](for文)
+	for i in range(0,n-1):
+		if a[i]>a[i+1]:
+			a[i+1]=a[i]
+	最大値=a[n-1]	
+	print(最大値)
+end process
+
+⑥任意整数を任意整数で割った時の余りを計算
+start process
+	任意定数aを定める
+	任意定数bを定める
+	商q=a//b
+	余りremainder=a-b*q
+	print(remainder)
+end process
+
+⑦x,yを取得し、(x,y)が(0,0)を中心とする半径1の円の内部の座標か判定
+start process
+	import random
+	x=random.uniform(0,100)
+	y=random.uniform(0,100)
+	if x^2+y^2<=1:
+		print(circle)
+	else:
+		print(not circle)
+end process
